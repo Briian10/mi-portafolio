@@ -52,9 +52,9 @@ function TimelineItem({ position, company, period, description, isLast = false }
 function PhotoGallery() {
   const [activePhoto, setActivePhoto] = useState(0);
   const photos = [
-    "/api/placeholder/600/400",
-    "/api/placeholder/600/400",
-    "/api/placeholder/600/400"
+    "src/images/porto.jpg",
+    "src/images/Web.png",
+    "src/images/lib.png"
   ];
 
   return (
@@ -229,7 +229,7 @@ export default function App() {
       id: 1,
       title: "Portafolio Personal",
       description: "Un sitio web para mostrar mis proyectos y experiencia como desarrollador frontend.",
-      image: "/api/placeholder/600/400",
+      image: "src/images/perfil.png",
       tags: ["React", "Tailwind CSS", "JavaScript"],
       demoUrl: "#",
       repoUrl: "#",
@@ -239,7 +239,7 @@ export default function App() {
       id: 2,
       title: "App de Tareas",
       description: "Aplicación CRUD para gestionar tareas. Permite crear, editar y eliminar tareas.",
-      image: "/api/placeholder/600/400",
+      image: "src/images/spring.png",
       tags: ["React", "Firebase", "CSS"],
       demoUrl: "#",
       repoUrl: "#",
@@ -249,7 +249,7 @@ export default function App() {
       id: 3,
       title: "Clon de GitHub",
       description: "Proyecto inspirado en GitHub para practicar diseño UI. Contiene perfiles de usuario y repos.",
-      image: "/api/placeholder/600/400",
+      image: "src/images/profile.png",
       tags: ["HTML", "CSS", "JavaScript"],
       demoUrl: "#",
       repoUrl: "#",
@@ -259,7 +259,7 @@ export default function App() {
       id: 4,
       title: "API de Notas",
       description: "Backend para aplicación de notas con autenticación y gestión de usuarios.",
-      image: "/api/placeholder/600/400",
+      image: "src/images/back4app.png",
       tags: ["Node.js", "Express", "MongoDB"],
       demoUrl: "#",
       repoUrl: "#",
@@ -269,7 +269,7 @@ export default function App() {
       id: 5,
       title: "Dashboard Admin",
       description: "Panel de administración con gráficos y estadísticas en tiempo real.",
-      image: "/api/placeholder/600/400",
+      image: "src/images/Panel.png",
       tags: ["React", "Chart.js", "Material UI"],
       demoUrl: "#",
       repoUrl: "#",
@@ -279,7 +279,7 @@ export default function App() {
       id: 6,
       title: "E-commerce Wordpress",
       description: "Tienda en línea completa con carrito de compras y pasarela de pagos.",
-      image: "/api/placeholder/600/400",
+      image: "src/images/ecomer.png",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       demoUrl: "#",
       repoUrl: "#",
