@@ -12,6 +12,7 @@
     "postcss": "^8.4.24",
     "tailwindcss": "^3.4.1",
     "vite": "^5.2.0"
+    
   },
   "dependencies": {
     "lucide-react": "^0.511.0",
