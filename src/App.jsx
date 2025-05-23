@@ -524,14 +524,14 @@ export default function App() {
   }
 `}</style>
       {/* About Section: mismo ancho que proyectos */}
-<section id="sobre-mi" className="max-w-6xl mx-auto mb-16 px-4 md:px-0 mt-20">
+<section id="sobre-mi" className="max-w-6xl mx-auto mb-16 px-4 md:px-6 mt-20">
   <h2 className="text-xl sm:text-2xl text-[#58A6FF] mb-8 border-b border-[#30363D] pb-2 font-semibold">
     Sobre mí
   </h2>
 
-  <div className="bg-[#161B22] rounded-2xl shadow-lg p-8">
+  <div className="bg-[#161B22] rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
     {/* Tabs */}
-    <div className="flex gap-8 mb-6 border-b border-[#30363D] text-[#8B949E] font-semibold">
+    <div className="flex flex-wrap gap-4 sm:gap-8 mb-6 border-b border-[#30363D] text-[#8B949E] font-semibold">
       <button
         onClick={() => handleTabChange("bio")}
         className={`flex items-center gap-2 pb-2 border-b-4 ${
@@ -564,10 +564,10 @@ export default function App() {
     {/* Content */}
     <div className={`text-[#8B949E] transition-opacity duration-300 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
       {tab === "bio" && (
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-3xl mx-auto w-full">
           <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
-            <div className="md:w-1/3">
-              <div className="rounded-full w-32 h-32 overflow-hidden border-4 border-[#30363D] shadow-lg mx-auto">
+            <div className="w-full md:w-1/3 flex justify-center">
+              <div className="rounded-full w-28 sm:w-32 h-28 sm:h-32 overflow-hidden border-4 border-[#30363D] shadow-lg">
                 <img 
                   src="src/images/luna.png" 
                   alt="Foto de perfil" 
@@ -575,8 +575,8 @@ export default function App() {
                 />
               </div>
             </div>
-            <div className="md:w-2/3 text-center md:text-left">
-              <div className="flex gap-3 justify-center md:justify-start mb-4">
+            <div className="w-full md:w-2/3 text-center md:text-left">
+              <div className="flex justify-center md:justify-start gap-3 mb-4">
                 <a href="#" className="rounded-full bg-[#21262D] p-2 hover:bg-[#30363D] transition-colors">
                   <Github size={16} />
                 </a>
@@ -589,16 +589,16 @@ export default function App() {
               </div>
             </div>
           </div>
-          
+
           <PhotoGallery />
-          
+
           <div className="text-center">
             <p className="text-base sm:text-lg leading-relaxed mb-4">
-              Soy un desarrollador con experiencia en React, JavaScript y diseño de interfaces. Me encanta crear productos visualmente atractivos que también sean accesibles y eficientes.
+              Soy un desarrollador con experiencia en React, JavaScript y diseño de interfaces...
             </p>
             {showMore && (
               <p className="text-base sm:text-lg leading-relaxed mb-4">
-                Tengo pasión por aprender nuevas tecnologías, mejorar mis habilidades constantemente y colaborar en proyectos que tengan impacto real. Me gusta escribir artículos técnicos y ayudar a la comunidad de desarrolladores.
+                Tengo pasión por aprender nuevas tecnologías...
               </p>
             )}
             <button
@@ -621,7 +621,7 @@ export default function App() {
       )}
 
       {tab === "skills" && (
-        <div className="text-left max-w-md mx-auto">
+        <div className="text-left max-w-md mx-auto w-full space-y-4">
           <SkillBar skill="React" level={90} delay={0} />
           <SkillBar skill="JavaScript" level={85} delay={1} />
           <SkillBar skill="CSS / Tailwind" level={80} delay={2} />
@@ -631,18 +631,18 @@ export default function App() {
       )}
 
       {tab === "experience" && (
-        <div className="text-left max-w-md mx-auto space-y-4">
+        <div className="text-left max-w-md mx-auto w-full space-y-4">
           <TimelineItem 
             position="Desarrollador Frontend"
             company="Empresa X"
             period="Ene 2022 - Actualidad"
-            description="Desarrollo de aplicaciones web con React, mejorando la UI/UX y optimizando el rendimiento."
+            description="Desarrollo de aplicaciones web con React..."
           />
           <TimelineItem 
             position="Practicante en Empresa Y"
             company="Empresa Y"
             period="Jun 2021 - Dic 2021"
-            description="Apoyo en desarrollo frontend y diseño de interfaces para clientes."
+            description="Apoyo en desarrollo frontend..."
             isLast={true}
           />
         </div>
@@ -650,6 +650,7 @@ export default function App() {
     </div>
   </div>
 </section>
+
 
 {/* Projects Section IMPROVED */}
 <section id="proyectos" className="max-w-6xl mx-auto mb-16 px-4 md:px-0">
