@@ -52,9 +52,9 @@ function TimelineItem({ position, company, period, description, isLast = false }
 function PhotoGallery() {
   const [activePhoto, setActivePhoto] = useState(0);
   const photos = [
-    "./public/porto.jpg",
-    "./public/Web.png",
-    "./public/lib.png"
+    "src/assets/porto.jpg",
+    "src/assets/Web.png",
+    "src/assets/lib.png"
   ];
 
   return (
@@ -229,7 +229,7 @@ export default function App() {
       id: 1,
       title: "Portafolio Personal",
       description: "Un sitio web para mostrar mis proyectos y experiencia como desarrollador frontend.",
-      image: "./public/perfil.png",
+      image: "src/assets/perfil.png",
       tags: ["React", "Tailwind CSS", "JavaScript"],
       demoUrl: "#",
       repoUrl: "#",
@@ -239,7 +239,7 @@ export default function App() {
       id: 2,
       title: "App de Tareas",
       description: "Aplicación CRUD para gestionar tareas. Permite crear, editar y eliminar tareas.",
-      image: "./public/spring.png",
+      image: "src/assets/spring.png",
       tags: ["React", "Firebase", "CSS"],
       demoUrl: "#",
       repoUrl: "#",
@@ -249,7 +249,7 @@ export default function App() {
       id: 3,
       title: "Clon de GitHub",
       description: "Proyecto inspirado en GitHub para practicar diseño UI. Contiene perfiles de usuario y repos.",
-      image: <img src="/profile.png" alt="Perfil" />,
+      image: "/profile.png",
       tags: ["HTML", "CSS", "JavaScript"],
       demoUrl: "#",
       repoUrl: "#",
@@ -269,7 +269,7 @@ export default function App() {
       id: 5,
       title: "Dashboard Admin",
       description: "Panel de administración con gráficos y estadísticas en tiempo real.",
-      image: "./public/Panel.png",
+      image: "src/assets/Panel.png",
       tags: ["React", "Chart.js", "Material UI"],
       demoUrl: "#",
       repoUrl: "#",
@@ -279,7 +279,7 @@ export default function App() {
       id: 6,
       title: "E-commerce Wordpress",
       description: "Tienda en línea completa con carrito de compras y pasarela de pagos.",
-      image: "./public/ecomer.png",
+      image: "src/assets/ecomer.png",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       demoUrl: "#",
       repoUrl: "#",
@@ -569,7 +569,7 @@ export default function App() {
             <div className="w-full md:w-1/3 flex justify-center">
               <div className="rounded-full w-28 sm:w-32 h-28 sm:h-32 overflow-hidden border-4 border-[#30363D] shadow-lg">
                 <img 
-                  src="./public/luna.png" 
+                  src="src/assets/luna.png" 
                   alt="Foto de perfil" 
                   className="w-full h-full object-cover"
                 />
