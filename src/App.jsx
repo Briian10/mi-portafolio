@@ -52,7 +52,7 @@ function TimelineItem({ position, company, period, description, isLast = false }
 function PhotoGallery() {
   const [activePhoto, setActivePhoto] = useState(0);
   const photos = [
-    "/porto.jpg",
+    "/porto.png",
     "/Web.png",
     "/lib.png"
   ];
