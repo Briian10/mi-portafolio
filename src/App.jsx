@@ -249,7 +249,7 @@ export default function App() {
       id: 3,
       title: "Clon de GitHub",
       description: "Proyecto inspirado en GitHub para practicar diseño UI. Contiene perfiles de usuario y repos.",
-      image: "./public/profile.png",
+      image: <img src="/profile.png" alt="Perfil" />,
       tags: ["HTML", "CSS", "JavaScript"],
       demoUrl: "#",
       repoUrl: "#",
